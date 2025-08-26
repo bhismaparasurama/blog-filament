@@ -7,6 +7,7 @@ return [
     'allowed_origins' => [
         'http://localhost:3000',   // Next.js local dev
         'http://127.0.0.1:3000',
+        'https://bhisma-cv-portfolio.vercel.app/',
     ],
 
     'allowed_origins_patterns' => [],
