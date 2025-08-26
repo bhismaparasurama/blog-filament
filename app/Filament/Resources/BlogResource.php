@@ -21,7 +21,9 @@ class BlogResource extends Resource
                 ->required(),
             Forms\Components\FileUpload::make('image')
                 ->image()
-                ->directory('blogs'),
+                ->directory('blogs')
+                ->maxSize(10240)
+                ->rules(['mimes:jpg,jpeg,png,gif,webp']),
             Forms\Components\RichEditor::make('content')
                 ->label('Content')
                 ->toolbarButtons([
